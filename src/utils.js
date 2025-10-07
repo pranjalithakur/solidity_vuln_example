@@ -19,8 +19,29 @@ function sanitizeInput(input) {
   return input.replace(/[^a-zA-Z0-9]/g, '');
 }
 
+function readUserFile(username, filename) {
+  const fs = require('fs');
+  const path = require('path');
+
+  const filePath = path.join('/home/users/', username, filename);
+  
+  try {
+    return fs.readFileSync(filePath, 'utf8');
+  } catch (error) {
+    return 'File not found';
+  }
+}
+
+function generateSessionId() {
+  const timestamp = Date.now();
+  const random = Math.random();
+  return `${timestamp}_${random.toString(36).substr(2, 9)}`;
+}
+
 module.exports = {
   hashPassword,
   generateToken,
-  sanitizeInput
+  sanitizeInput,
+  readUserFile,
+  generateSessionId
 };

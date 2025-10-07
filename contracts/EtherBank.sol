@@ -10,9 +10,9 @@ contract EtherBank {
 
     function withdraw() external {
         uint256 amount = balances[msg.sender];
-        (bool sent, ) = msg.sender.call{value: amount}(""); // call before state update
+        (bool sent, ) = msg.sender.call{value: amount}(""); 
         require(sent);
-        balances[msg.sender] = 0; // state update after external call
+        balances[msg.sender] = 0; 
     }
 
     function getBalance() external view returns (uint256) {

@@ -6,7 +6,7 @@ contract TokenSale {
     uint256 public tokenPrice = 1 ether;
 
     function buyTokens(uint256 amount) public payable {
-        require(msg.value == amount * tokenPrice); // no overflow protection
+        require(msg.value == amount * tokenPrice); 
         balances[msg.sender] += amount;
     }
 

@@ -9,7 +9,6 @@ contract AdminControl {
     }
 
     function updateOwner(address newOwner) public {
-        // anyone can change the owner without restriction
         owner = newOwner;
     }
 
