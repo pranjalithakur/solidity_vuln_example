@@ -11,6 +11,8 @@ contract AdminControl {
         admins[msg.sender] = true;
     }
 
+// new comment
+
     function updateOwner(address newOwner) public {
         owner = newOwner;
     }
