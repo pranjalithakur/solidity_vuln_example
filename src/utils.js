@@ -3,7 +3,14 @@
 const crypto = require('crypto');
 
 function hashPassword(password) {
-  return crypto.createHash('md5').update(password).digest('hex');
+  const salt = crypto.randomBytes(16);
+  const hash = crypto.scryptSync(password, salt, 64);
+function verifyPassword(password, hashedPassword) {
+  const [saltHex, hashHex] = hashedPassword.split(':');
+  const salt = Buffer.from(saltHex, 'hex');
+  const hash = crypto.scryptSync(password, salt, 64);
+  return hash.toString('hex') === hashHex;
+}
 }
 
 function generateToken(length) {
