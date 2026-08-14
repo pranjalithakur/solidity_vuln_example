@@ -1,0 +1,930 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/core/Crystal.sol": {
+      "lastModificationDate": 1786643907358,
+      "contentHash": "82c1d4c955da8f123e325e0bf324dd59",
+      "sourceName": "contracts/core/Crystal.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol",
+        "../interfaces/ICrystal.sol",
+        "../libraries/CrystalMath.sol",
+        "../libraries/CrystalStorage.sol",
+        "./CrystalToken.sol",
+        "./CrystalMarket.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "Crystal"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "ef50c5464ad1554d2685623d5f60287e",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "6a46b59ada13ace25585ca5069276e81",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/interfaces/ICrystal.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "3b418744efc1cce7d880fc413cc22e0f",
+      "sourceName": "contracts/interfaces/ICrystal.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "ICrystal"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/libraries/CrystalMath.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "73c013bb4aded6acef24def9c45fa88d",
+      "sourceName": "contracts/libraries/CrystalMath.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalMath"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/libraries/CrystalStorage.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "ec0fc66985cbb1821bc2ac298db33326",
+      "sourceName": "contracts/libraries/CrystalStorage.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/CrystalMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalStorage"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/core/CrystalToken.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "3a2afb035f81a0992f3014dfab3072da",
+      "sourceName": "contracts/core/CrystalToken.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalToken"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/core/CrystalMarket.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "bb525de819cdd71a4e10fd98d6058bb3",
+      "sourceName": "contracts/core/CrystalMarket.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/ICrystal.sol",
+        "../libraries/ERC20.sol",
+        "../libraries/CrystalMath.sol",
+        "../libraries/CrystalStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalMarket"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/libraries/ERC20.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "b9fd66d5c48b27bb64db45492e267ff7",
+      "sourceName": "contracts/libraries/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/CrystalHarness.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "b4ce0519f34f1883b7ffa166716ac1ba",
+      "sourceName": "contracts/mocks/CrystalHarness.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../core/Crystal.sol",
+        "../interfaces/ICrystal.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalHarness"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/vaults/CrystalVaultFactory.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "c4cf3cda740ce5162bf3fea32f22191e",
+      "sourceName": "contracts/vaults/CrystalVaultFactory.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol",
+        "../interfaces/ICrystal.sol",
+        "../interfaces/ICrystalVault.sol",
+        "../interfaces/ICrystalVaultFactory.sol",
+        "./CrystalVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalVaultFactory"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/interfaces/ICrystalVault.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "47c87785a8e3155b6d72e3b4704638b2",
+      "sourceName": "contracts/interfaces/ICrystalVault.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "ICrystalVault"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/interfaces/ICrystalVaultFactory.sol": {
+      "lastModificationDate": 1786643907359,
+      "contentHash": "9bec491cbb7ec45c7d283a5816132a18",
+      "sourceName": "contracts/interfaces/ICrystalVaultFactory.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ICrystalVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "ICrystalVaultFactory"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/vaults/CrystalVault.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "86811abc8af72bca986684c3010f62bc",
+      "sourceName": "contracts/vaults/CrystalVault.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/ICrystal.sol",
+        "../interfaces/ICrystalVault.sol",
+        "../interfaces/ICrystalVaultFactory.sol",
+        "../libraries/ERC20.sol",
+        "../libraries/CrystalMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalVault"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/CrystalMarketHarness.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "937a2cdee067d1a2f6b4a7fb9345be72",
+      "sourceName": "contracts/mocks/CrystalMarketHarness.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ICrystal.sol",
+        "../libraries/CrystalMath.sol",
+        "../libraries/CrystalStorage.sol",
+        "../core/CrystalMarket.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalMarketHarness"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/MockCrystal.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "4b6b5521a28dfb77e65a495c22ad58bb",
+      "sourceName": "contracts/mocks/MockCrystal.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/ICrystal.sol",
+        "../interfaces/ICrystalVault.sol",
+        "../vaults/CrystalVault.sol",
+        "./CrystalMarketHarness.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "MockCrystal",
+        "MockFactory"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/BadOwner.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "54880eec18e7ac0216aa49849d126d8e",
+      "sourceName": "contracts/mocks/BadOwner.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/ICrystalVault.sol",
+        "../interfaces/ICrystalVaultFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "BadOwner"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/ETHRejecter.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "f41dda4a1cd26f0eeb0dd3f1ff1437b9",
+      "sourceName": "contracts/mocks/ETHRejecter.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IERC20.sol",
+        "../interfaces/ICrystal.sol",
+        "../interfaces/ICrystalVaultFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "CrystalReentrancyAttacker",
+        "ETHRejecter",
+        "ETHToggler",
+        "ReentrancyAttacker"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/FailingToken.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "a322880ba98b686ffcc94ad755b35295",
+      "sourceName": "contracts/mocks/FailingToken.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "FailingToken"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/MaliciousMarket.sol": {
+      "lastModificationDate": 1786643907360,
+      "contentHash": "3c3839a5c8f0045c6cce3a76f62573ef",
+      "sourceName": "contracts/mocks/MaliciousMarket.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "AssemblyFailingMarket",
+        "FailingMarket",
+        "FailingQuoteMarket",
+        "InconsistentQuoteMarket",
+        "MaliciousMarket"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/RouterTestMocks.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "1b268c5db5fec3282508dae6b249ac78",
+      "sourceName": "contracts/mocks/RouterTestMocks.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CancelOrderMarket",
+        "DrainWethMarket",
+        "InflatingMarket",
+        "LimitOrderMarket",
+        "NoCreditMarket",
+        "NoRefundMarket",
+        "ReplaceOrderMarket",
+        "RevertingQuoteMarket",
+        "ToggleMarket"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/TestToken.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "8f1a5356eaeeec22b0c09d230b4e8440",
+      "sourceName": "contracts/mocks/TestToken.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "/Users/pranjalithakur/Desktop/code-audit/Crystal-Contracts-private/contracts/mocks/WETH.sol": {
+      "lastModificationDate": 1786643907361,
+      "contentHash": "65878d1be489da1f6706ccb96d1f3cb5",
+      "sourceName": "contracts/mocks/WETH.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "prague",
+          "viaIR": false,
+          "optimizer": {
+            "enabled": true,
+            "runs": 8000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.28"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "InflatingMarket",
+  "sourceName": "contracts/mocks/RouterTestMocks.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "size",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "getQuote",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "size",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "marketOrder",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b5061021f8061001c5f395ff3fe608060405260043610610028575f3560e01c8063638571e31461002c578063e690552b1461005e575b5f5ffd5b61004461003a3660046100c1565b5093849350915050565b604080519283526020830191909152015b60405180910390f35b61007161006c366004610135565b61008c565b60408051938452602084019290925290820152606001610055565b5f808061009a8760016101ab565b9b969a505f995095975050505050505050565b803580151581146100bc575f5ffd5b919050565b5f5f5f5f5f60a086880312156100d5575f5ffd5b6100de866100ad565b94506100ec602087016100ad565b93506100fa604087016100ad565b94979396509394606081013594506080013592915050565b803573ffffffffffffffffffffffffffffffffffffffff811681146100bc575f5ffd5b5f5f5f5f5f5f5f5f610100898b03121561014d575f5ffd5b610156896100ad565b975061016460208a016100ad565b965060408901359550606089013594506080890135935060a0890135925061018e60c08a01610112565b915061019c60e08a01610112565b90509295985092959890939650565b808201808211156101e3577f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b9291505056fea2646970667358221220d65d8b1aa6fb6d08be8afd4f4b1bdf2c40f32332eab00f03773b4399524c49e964736f6c634300081c0033",
+  "deployedBytecode": "0x608060405260043610610028575f3560e01c8063638571e31461002c578063e690552b1461005e575b5f5ffd5b61004461003a3660046100c1565b5093849350915050565b604080519283526020830191909152015b60405180910390f35b61007161006c366004610135565b61008c565b60408051938452602084019290925290820152606001610055565b5f808061009a8760016101ab565b9b969a505f995095975050505050505050565b803580151581146100bc575f5ffd5b919050565b5f5f5f5f5f60a086880312156100d5575f5ffd5b6100de866100ad565b94506100ec602087016100ad565b93506100fa604087016100ad565b94979396509394606081013594506080013592915050565b803573ffffffffffffffffffffffffffffffffffffffff811681146100bc575f5ffd5b5f5f5f5f5f5f5f5f610100898b03121561014d575f5ffd5b610156896100ad565b975061016460208a016100ad565b965060408901359550606089013594506080890135935060a0890135925061018e60c08a01610112565b915061019c60e08a01610112565b90509295985092959890939650565b808201808211156101e3577f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b9291505056fea2646970667358221220d65d8b1aa6fb6d08be8afd4f4b1bdf2c40f32332eab00f03773b4399524c49e964736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

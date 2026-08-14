@@ -1,0 +1,119 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "FailingMarket",
+  "sourceName": "contracts/mocks/MaliciousMarket.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "isBuy",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isExactInput",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "useInternalBalance",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "size",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "worstPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "getQuote",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "inputAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "outputAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "isBuy",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isExactInput",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "options",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "orderType",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "size",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "worstPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "referrer",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "marketOrder",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b5061023c8061001c5f395ff3fe608060405260043610610028575f3560e01c8063638571e31461002c578063e690552b1461006a575b5f5ffd5b348015610037575f5ffd5b5061005061004636600461011c565b5093849350915050565b604080519283526020830191909152015b60405180910390f35b61007d610078366004610190565b610098565b60408051938452602084019290925290820152606001610061565b5f5f5f6040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016100ff906020808252601d908201527f4661696c696e674d61726b65743a20666f72636564206661696c757265000000604082015260600190565b60405180910390fd5b80358015158114610117575f5ffd5b919050565b5f5f5f5f5f60a08688031215610130575f5ffd5b61013986610108565b945061014760208701610108565b935061015560408701610108565b94979396509394606081013594506080013592915050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610117575f5ffd5b5f5f5f5f5f5f5f5f610100898b0312156101a8575f5ffd5b6101b189610108565b97506101bf60208a01610108565b965060408901359550606089013594506080890135935060a089013592506101e960c08a0161016d565b91506101f760e08a0161016d565b9050929598509295989093965056fea2646970667358221220dbe8a829511cabf473e0bdc888b8323200a9b296cdda95b7dce90d66693e716c64736f6c634300081c0033",
+  "deployedBytecode": "0x608060405260043610610028575f3560e01c8063638571e31461002c578063e690552b1461006a575b5f5ffd5b348015610037575f5ffd5b5061005061004636600461011c565b5093849350915050565b604080519283526020830191909152015b60405180910390f35b61007d610078366004610190565b610098565b60408051938452602084019290925290820152606001610061565b5f5f5f6040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016100ff906020808252601d908201527f4661696c696e674d61726b65743a20666f72636564206661696c757265000000604082015260600190565b60405180910390fd5b80358015158114610117575f5ffd5b919050565b5f5f5f5f5f60a08688031215610130575f5ffd5b61013986610108565b945061014760208701610108565b935061015560408701610108565b94979396509394606081013594506080013592915050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610117575f5ffd5b5f5f5f5f5f5f5f5f610100898b0312156101a8575f5ffd5b6101b189610108565b97506101bf60208a01610108565b965060408901359550606089013594506080890135935060a089013592506101e960c08a0161016d565b91506101f760e08a0161016d565b9050929598509295989093965056fea2646970667358221220dbe8a829511cabf473e0bdc888b8323200a9b296cdda95b7dce90d66693e716c64736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

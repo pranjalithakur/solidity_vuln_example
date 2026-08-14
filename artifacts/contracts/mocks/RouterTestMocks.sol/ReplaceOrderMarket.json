@@ -1,0 +1,76 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ReplaceOrderMarket",
+  "sourceName": "contracts/mocks/RouterTestMocks.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_weth",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "replaceOrder",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60c0604052348015600e575f5ffd5b5060405161029a38038061029a833981016040819052602b916040565b6001600160a01b0390911660805260a0526075565b5f5f604083850312156050575f5ffd5b82516001600160a01b03811681146065575f5ffd5b6020939093015192949293505050565b60805160a0516102056100955f395f61011901525f604a01526102055ff3fe60806040526004361061001d575f3560e01c80636c8dce7914610021575b5f5ffd5b61003461002f366004610171565b610046565b60405190815260200160405180910390f35b5f5f7f00000000000000000000000000000000000000000000000000000000000000005f600b604051602001610086929190918252602082015260400190565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0818403018152828252805160209182012073ffffffffffffffffffffffffffffffffffffffff90941690830152810191909152606001604080518083037fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe001815291905280516020909101207f0000000000000000000000000000000000000000000000000000000000000000905550600198975050505050505050565b803573ffffffffffffffffffffffffffffffffffffffff8116811461016c575f5ffd5b919050565b5f5f5f5f5f5f5f60e0888a031215610187575f5ffd5b87359650602088013595506040880135945060608801359350608088013592506101b360a08901610149565b91506101c160c08901610149565b90509295989194975092955056fea2646970667358221220adefbf0becf3e533c8c012ca4e60033c0aa265e617084777af5a7c9750121ff864736f6c634300081c0033",
+  "deployedBytecode": "0x60806040526004361061001d575f3560e01c80636c8dce7914610021575b5f5ffd5b61003461002f366004610171565b610046565b60405190815260200160405180910390f35b5f5f7f00000000000000000000000000000000000000000000000000000000000000005f600b604051602001610086929190918252602082015260400190565b604080517fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0818403018152828252805160209182012073ffffffffffffffffffffffffffffffffffffffff90941690830152810191909152606001604080518083037fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe001815291905280516020909101207f0000000000000000000000000000000000000000000000000000000000000000905550600198975050505050505050565b803573ffffffffffffffffffffffffffffffffffffffff8116811461016c575f5ffd5b919050565b5f5f5f5f5f5f5f60e0888a031215610187575f5ffd5b87359650602088013595506040880135945060608801359350608088013592506101b360a08901610149565b91506101c160c08901610149565b90509295989194975092955056fea2646970667358221220adefbf0becf3e533c8c012ca4e60033c0aa265e617084777af5a7c9750121ff864736f6c634300081c0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
